@@ -10,13 +10,13 @@ public class URLScanner
     public static void main( String[] args ) throws MalformedURLException {
         URL personalSite = new URL("http://ldbn.escuelaing.edu.co:80/publicaciones.pdf=val=45&r=78#publicaciones");
         System.out.println( "Protocolo: "+ personalSite.getProtocol() );
-        System.out.println( "authority: "+ personalSite.getAuthority() );
-        System.out.println( "host: "+ personalSite.getHost() );
-        System.out.println( "port: "+ personalSite.getPort() );
-        System.out.println( "path: "+ personalSite.getPath() );
-        System.out.println( "quey: "+ personalSite.getQuery() );
-        System.out.println( "file: "+ personalSite.getFile() );
-        System.out.println( "ref: "+ personalSite.getRef() );
+        System.out.println( "Authority: "+ personalSite.getAuthority() );
+        System.out.println( "Host: "+ personalSite.getHost() );
+        System.out.println( "Port: "+ personalSite.getPort() );
+        System.out.println( "Path: "+ personalSite.getPath() );
+        System.out.println( "Query: "+ personalSite.getQuery() );
+        System.out.println( "File: "+ personalSite.getFile() );
+        System.out.println( "Ref: "+ personalSite.getRef() );
 
     }
 }

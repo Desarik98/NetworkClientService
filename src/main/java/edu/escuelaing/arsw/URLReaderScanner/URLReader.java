@@ -8,12 +8,13 @@ import java.net.*;
  */
 public class URLReader {
     public static void main(String[] args) throws Exception {
-        URL google = new URL("http://www.google.com/");
+
+        URL google = new URL(args[0]);
         FileWriter file = null;
         PrintWriter pw = null;
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(google.openStream()))) {
             String inputLine = null;
-            file = new FileWriter("/home/daniel/Escritorio/ARSW/NetworkClientService/src/main/java/edu/escuelaing/arsw/URLReaderScanner/google.html");
+            file = new FileWriter("resultado.html");
             pw = new PrintWriter(file);
             while ((inputLine = reader.readLine()) != null) {
                 pw.println(inputLine);

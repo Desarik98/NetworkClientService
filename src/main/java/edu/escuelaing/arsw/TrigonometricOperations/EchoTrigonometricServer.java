@@ -85,6 +85,9 @@ public class EchoTrigonometricServer {
             }
         }
         double r = Integer.parseInt(num)*pi/Integer.parseInt(den);
+        if(op == null){
+            op = "cos";
+        }
         switch (op){
             case "sin":
                 System.out.println("Seno");
