@@ -44,6 +44,7 @@ Ejemplo del comando para la ejecución del ejercicio
 java -cp java -cp NetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.URLReaderScanner.URLReader https://www.google.com
 ```
 ![GoogleHTMLPage](Images/GoogleHTMLPage.png)
+
 #### Ejercicio 3: SquareNumber
 Esta aplicación nos retornará el cuadrado de un número dado por el Cliente, para esto se hace el uso de sockets, que se utilizan para realizar la comunicación con el Servidor quien devolverá el cuadrado de este número.
 
@@ -56,6 +57,7 @@ java -cp NetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.SquareNumber.
 A continuación en la terminal en donde se ejecuta el Cliente, digitará cualquier número, y al darle Enter le devolverá un mensaje con el cuadrado correspondiente.
 
 ![SquareAnswer](Images/SquareAnswer.png)
+
 #### Ejercicio 4: TrigonometricOperations
 Esta aplicación nos retornara el valor de una función trigonométrica especificada dado un número digitado por el usuario, por defecto calculara el coseno del número dado. En caso de querer cambiar de función se deberá escribir la sentencia fun: funcionTrigonometrica y después el cliente podrá digitar números para ver su resultado.
 
@@ -68,6 +70,7 @@ java -cp NetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Trigonometric
 A continuación en la terminal en donde se ejecuta el Cliente, digitará cualquier número, y al darle Enter le devolverá el coseno de un número por defecto, para utilizar el número PI se deberá utilizar el símbolo **π**.
 
 ![OpCoseno](Images/Coseno.png)
+
 En caso de querer cambiar de función deberá digitar:
 * fun:sin para función seno
 * fun:cos para función coseno
@@ -75,6 +78,7 @@ En caso de querer cambiar de función deberá digitar:
   
   ![OpSeno](Images/Seno.png)
   ![OpTangente](Images/Tangente.png)
+  
 #### Ejercicio 5: HTTPServer
 Implementación de un servidor web que soporta solicitudes no concurrentes el cual retorna todos los archivos solicitados, incluyendo páginas HTML e imágenes.
 
@@ -107,12 +111,15 @@ java -cp NetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.DatagramServe
 A continuación el Cliente estará recibiendo la hora actual del servidor cada 5 segundos:
 
 ![DatagramClient](Images/DatagramClient.png)
+
 Si el Server se detiene el Cliente seguirá recibiendo la última hora dada por el Server:
 
 ![ServerDetenido](Images/ServerDetenido.png)
+
 Si el Server se reanuda el Cliente volverá a obtener la hora actual del Server actualizada:
 
 ![ServerReanudado](Images/ServerReanudado.png)
+
 ## Autor
 * Daniel Alejandro Mejía Rojas - Fecha: 10/06/2021
 ## Licencia
